@@ -3,7 +3,7 @@ Python script to scrape UT2004 player statistics from Omnip)o(tent's UTStatsDB p
 
 1. A list of matches played over (roughly) the past month that included at least 16 players
 2. A raw, uncleaned file of player statistics
-3. A trimmed and cleaned version of the player statistics with updated column names and organized in alphabetical order by player name
+3. A cleaned version of player statistics organized in alphabetical order by player name
 
 ## Requirements
 
