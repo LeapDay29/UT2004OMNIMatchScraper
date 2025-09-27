@@ -13,5 +13,5 @@ Python script to scrape UT2004 player statistics from Omnip)o(tent's UTStatsDB p
      requests, re, bs4 (beautifulsoup4), pandas, datetime, urllib.parse
 
 ## How to Use
-
-Simply click the Run button. The script will automatically pull select matches from UTStatsDB (https://www.omnipotents.com/utstats2/) into its own .csv file, then use that file to pull player statistics that it cleans up and organizes into a usable table for further analysis.
+a
+Simply click the Run button. The script will automatically pull select matches from UTStatsDB (https://www.omnipotents.com/utstats2/) into its own .csv file, then uses that file to scrape player statistics into a raw .csv file that is subsequently cleaned and loaded into an improved .csv file.
