@@ -163,8 +163,8 @@ psabc = ps.sort_values(
 )
 
 # Remove any players that appear 5 or less times (have played 5 or less big matches)
-players = 'Plrs'
-counts = df[players].value_counts()
+players = "PlayerName"
+counts = psabc[players].value_counts()
 psabc = psabc[psabc[players].isin(counts[counts > 5].index)]
 
 print(psabc.head(100))
@@ -176,3 +176,4 @@ print(psabc.head(10))
 # Export to a separate CSV file
 
 psabc.to_csv("playerstats.csv", index=False)
+
