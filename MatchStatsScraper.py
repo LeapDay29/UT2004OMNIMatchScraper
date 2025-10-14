@@ -162,6 +162,10 @@ psabc = ps.sort_values(
     key=lambda col: col.str.lower()
 )
 
+# Return original column names to the table (remove the nondescript numbers)
+psabc.columns = ["RankInMatch", "PlayerName", "FinalScore", "Frags", "Kills", "Deaths", "Suicides", "Efficiency", "AvgScorePerHour", "AvgTimeToLive", "TimePlayingInMatch", "KillingSpree", "Rampage", "Dominating", "Unstoppable", "Godlike", "WickedSick"]
+print(psabc.head(10))
+
 # Remove any players that appear 5 or less times (have played 5 or less big matches)
 players = "PlayerName"
 counts = psabc[players].value_counts()
@@ -169,11 +173,8 @@ psabc = psabc[psabc[players].isin(counts[counts > 5].index)]
 
 print(psabc.head(100))
 
-# Return original column names to the table (remove the nondescript numbers)
-psabc.columns = ["RankInMatch", "PlayerName", "FinalScore", "Frags", "Kills", "Deaths", "Suicides", "Efficiency", "AvgScorePerHour", "AvgTimeToLive", "TimePlayingInMatch", "KillingSpree", "Rampage", "Dominating", "Unstoppable", "Godlike", "WickedSick"]
-print(psabc.head(10))
-
 # Export to a separate CSV file
 
 psabc.to_csv("playerstats.csv", index=False)
+
 
