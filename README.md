@@ -11,7 +11,7 @@ Python scripts to scrape UT2004 player statistics from Omnip)o(tent's UTStatsDB 
 
 ## How to Use
 
-# YOU MUST RUN THE SCRIPTS IN THE ORDER LISTED BELOW (if looking to use both the scrapers and the cleaners). If you end up running the Cleaning scripts more than once, you will need to go back and re-process the Scraping scripts (I will probably be tweaking the code in the near future so that each script can be repeatedly ran without needing to do this).
+**YOU MUST RUN THE SCRIPTS IN THE ORDER LISTED BELOW** (if looking to use both the scrapers and the cleaners). If you end up running the Cleaning scripts more than once, you will need to go back and re-process the Scraping scripts (I will probably be tweaking the code in the near future so that each script can be repeatedly ran without needing to do this).
 
 1. PlayerStatsScraper and ObjStatsScraper
 2. PlayerStatsCleaning and ObjStatsCleaning
